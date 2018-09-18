@@ -1,0 +1,123 @@
+body,html {
+    background: rgba(0,0, 0, 0);
+    background-color:rgba(0,0, 0, 0);
+    border: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+/* make the canvas the size of the viewport */
+#webGLCanvas {
+    background: rgba(0,0, 0, 0);
+    background-color:rgba(0,0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    
+}
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+body {
+  background: black;
+  
+}
+.main-menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: hellanimation 4s infinite;
+    border-radius: 4vh;
+    height: 70vh;
+    width: 50vw;
+}
+.game-score{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    width: 8vw;
+    text-align: center;
+    
+}
+#score{
+    position:relative;
+    right: 3vh;
+    font-size:1em;
+    font-family:shadows into light;
+    cursor:pointer; 
+    
+    animation: scoreanimation 4s infinite;
+}
+@keyframes scoreanimation {
+    0% {color: red;}
+    25%{color:yellow;}
+    50%{color:blue;}
+    75%{color:magenta;}
+    100% {color: rebeccapurple;}
+  }
+#highscore{
+    position: fixed;
+    top:10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+    font-size:2em;
+    font-family:shadows into light;
+    animation: scoreanimation 4s infinite;
+}
+
+.game-title{
+    margin-top:30px;
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 2em;
+    transform: skewY(-10deg);
+    letter-spacing: 4px;
+    word-spacing: -8px;
+    color: rgb(71, 120, 255);
+    text-shadow: 
+      -1px -1px 0 rgb(48, 34, 178),
+      -2px -2px 0 rgb(48, 34, 178),
+      -3px -3px 0 rgb(48, 34, 178),
+      -4px -4px 0 rgb(48, 34, 178),
+      -5px -5px 0 rgb(48, 34, 178),
+      -6px -6px 0 rgb(48, 34, 178),
+      -7px -7px 0 rgb(48, 34, 178),
+      -8px -8px 0 rgb(48, 34, 178),
+      -30px 20px 40px dimgrey
+    
+    /*animation: hellanimation 4s infinite;*/
+}
+@keyframes hellanimation {
+    0% {background-color: rgb(255,25,25);}
+    25%{background-color: rgb(200,10,10);}
+    50%{background-color:rgb(220,20,60);}
+    75%{background-color:rgb(178,34,34);}
+    100% {background-color: rgb(139,0,0);}
+  }
+.pause-menu{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    width: 8vw;
+    text-align: center;
+    border-radius: 50px;
+
+}
+.game-button { 
+    margin-top: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align:center;
+    font-size:8vh;
+    background-color: blue;
+    color:red;
+    border-radius: 100px;
+    font-family:shadows into light;
+    cursor:pointer; 
+}
+
+#loading{
+    font-size:10vh;
+}

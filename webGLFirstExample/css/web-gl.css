@@ -1,0 +1,11 @@
+body {
+    text-align : center;
+  }
+  canvas {
+    display : block;
+    height : 300px; 
+    width : 300px;
+    margin : 0;
+    padding : 0;
+    border : none;
+  }
